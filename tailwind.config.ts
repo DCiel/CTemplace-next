@@ -22,7 +22,12 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+				small: '0.5rem',
+			},
+
       colors: {
+				page: "#0C0C0C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
