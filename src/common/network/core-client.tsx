@@ -11,13 +11,18 @@ class CoreClient {
 	}
 
 	#get_token() {
+		if (typeof window === "undefined") {
+			return null;
+		}
 		return localStorage.getItem("token");
 	}
 
 	#init() {
-		const token = this.#get_token();
 		this.core_backend.interceptors.request.use((config) => {
-			config.headers.Authorization = `Bearer ${token}`;
+			const token = this.#get_token();
+			if (token) {
+				config.headers.Authorization = `Bearer ${token}`;
+			}
 			return config;
 		});
 

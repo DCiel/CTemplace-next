@@ -1,6 +1,14 @@
+"use client";
+import { CORE_CLIENT_BACKEND } from "@/common/network/core-client";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export const Home = () => {
+	useEffect(() => {
+		CORE_CLIENT_BACKEND.core_backend.get("/").then((res) => {
+			console.log(res);
+		});
+	}, []);
 	return (
 		<div className="center flex-col">
 			<p className="text-4xl font-bold">DCL</p>
