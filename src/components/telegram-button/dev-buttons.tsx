@@ -1,5 +1,5 @@
 'use client'
-import { useTelegramStore } from "@/common/store/telegram";
+// import { useTelegramStore } from "@/common/store/telegram";
 import { WebApp } from "@/lib/expand-telegram";
 
 export function DevBackButton({
@@ -23,7 +23,7 @@ export function DevBackButton({
 }
 
 export function DevMainButton() {
-    const { text } = useTelegramStore();
+    // const { text } = useTelegramStore();
     const webApp = WebApp();
 
     const handleClick = () => {
@@ -35,7 +35,7 @@ export function DevMainButton() {
             className="fixed bottom-0 w-full py-4 text-sm font-medium text-center text-white bg-button_color"
             onClick={handleClick}
         >
-            {text}
+            {/* {text} */}
         </button>
     );
 }
