@@ -1,6 +1,4 @@
 "use client";
-
-// import { WebApp } from "@/common/utils/telegram";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { LoadingButton } from "@/common/ui/loading-button";
 

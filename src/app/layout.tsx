@@ -11,24 +11,10 @@ export const metadata: Metadata = {
 	title: titleSite,
 	description: descriptionSite,
 	authors: {
-		name: "DCiel | Vingrig",
+		name: "darkc1el",
 		url: "https://github.com/faes763",
 	},
-	creator: "dciel",
-	openGraph: {
-		title: titleSite,
-		description: descriptionSite,
-		siteName: "DCiel",
-		locale: "ru-RU",
-		type: "website",
-		images: [
-			{
-				url: "/other/graph.png",
-				width: 800,
-				height: 600,
-			},
-		],
-	},
+	creator: "darkc1el",
 };
 
 export default function RootLayout({
