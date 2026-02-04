@@ -17,6 +17,6 @@ jobs:
 
       - name: Login to GitHub Container Registry
         run: |
-            docker login --username ${{ github.repository_owner }} --password ${{ secrets.GH_PAT }} ghcr.io
-            docker build -t ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest .
-            docker push ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
+            docker login --username faes763 --password ${{ secrets.GH_PAT }} ghcr.io
+            docker build -t ghcr.io/faes763/${{ github.event.repository.name }}:latest .
+            docker push ghcr.io/faes763/${{ github.event.repository.name }}:latest
